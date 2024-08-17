@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <link href="./output.css" rel="stylesheet" /> -->
+  </head>
+  <body>
+    <header
+      class="h-[10vh] text-center bg-emerald-400 flex items-center justify-between"
+    >
+      <div class="logo text-[38px] font-bold">Quote Generator</div>
+      <nav class="nav flex justify-center items-center">
+        <ul
+          class="nav-ul flex justify-center items-center gap-[10px] mr-[10px] text-[20px]"
+        >
+          <li><button class="nav-btn">Art</button></li>
+          <li><button class="nav-btn">Car</button></li>
+          <li><button class="nav-btn">Fitness</button></li>
+          <li><button class="nav-btn">Inspirational</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-col gap-[20px]">
+      <div
+        class="container border-2 border-black w-[860px]  mt-[80px] mx-[auto] "
+      >
+        <div id="quote" class="p-[20px] text-center text-[36px] font-semibold"></div>
+        <div id="author" class="text-center italic mt-auto text-[22px]"></div>
+      </div>
+      <div class="getQuote mx-auto">
+        <button class="btn" id="get-quote-btn" onclick="setupGetQuote()">
+          Get Quote
+        </button>
+      </div>
+    </main>
+    
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
