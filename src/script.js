@@ -1,6 +1,7 @@
 console.log("This is script.js");
 let category = "inspirational";
 fetchQuotes();
+setupGetQuote();
 const buttons = document.querySelectorAll(".nav-btn");
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
