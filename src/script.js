@@ -6,6 +6,8 @@ const buttons = document.querySelectorAll(".nav-btn");
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     // fetchQuotes(e.textContent.toLowerCase());
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    e.target.classList.add("active");
     category = e.target.textContent.toLowerCase();
     fetchQuotes();
   });
