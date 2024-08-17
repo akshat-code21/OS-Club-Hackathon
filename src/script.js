@@ -37,6 +37,6 @@ function displayQuote(quote,author) {
     quoteTextContainer.innerHTML = ('<h2> "' + quote + '"</h2>');
     // quoteText.innerText = quote;
     let quoteAuthorContainer = document.getElementById('author');
-    quoteAuthorContainer.innerHTML = ('<h6>' + "-"+ author + '</h6>');
+    quoteAuthorContainer.innerHTML = ('<h6>' + "- "+ author + '</h6>');
     // quoteAuthor.innerText = "- " + author;
 }
