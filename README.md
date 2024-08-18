@@ -49,3 +49,7 @@ This website is hosted on :
 ```
 https://66c1861da07baf2282ff7792--jade-youtiao-8d012f.netlify.app/
 ```
+
+## Note
+
+Please replace "your-username" in the clone URL with your own actual GitHub username
