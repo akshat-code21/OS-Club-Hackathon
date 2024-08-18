@@ -53,8 +53,6 @@ hamburger.addEventListener("click", () => {
   nav.classList.toggle("active");
   hamburger.classList.toggle("active");
 });
-
-// Close menu when a nav item is clicked
 document.querySelectorAll(".nav-btn").forEach((item) => {
   item.addEventListener("click", () => {
     nav.classList.remove("active");
