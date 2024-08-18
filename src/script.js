@@ -45,3 +45,19 @@ function displayQuote(quote, author) {
   quoteAuthorContainer.innerHTML = "<h6>" + "- " + author + "</h6>";
   // quoteAuthor.innerText = "- " + author;
 }
+
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  hamburger.classList.toggle("active");
+});
+
+// Close menu when a nav item is clicked
+document.querySelectorAll(".nav-btn").forEach((item) => {
+  item.addEventListener("click", () => {
+    nav.classList.remove("active");
+    hamburger.classList.remove("active");
+  });
+});
