@@ -1,10 +1,102 @@
-.active{
-    /* text-decoration: underline red !important; */
-    border: 2px solid white;
-    color: black;
-    border-radius: 7px;
-    background-color: white;
+.active {
+  /* text-decoration: underline red !important; */
+  border: 2px solid white;
+  color: black;
+  border-radius: 7px;
+  background-color: white;
+  padding: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  top: 0;
+}
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 28px;
+  }
+  .nav-ul {
+    font-size: 16px;
+    gap: 10px;
+  }
+  #quote {
+    font-size: 28px;
+  }
+  #author {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    background-color: #34d399;
+    transition: 0.5s;
+  }
+  .nav.active {
+    right: 0;
+  }
+  .nav-ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .nav-ul li {
+    margin: 10px 0;
+  }
+  .container {
+    margin-top: 40px;
+  }
+  #quote {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+  .nav-btn {
+    font-size: 14px;
+  }
+  .message h6 {
+    font-size: 14px;
+  }
+  .message p {
+    font-size: 12px;
+  }
+  #quote {
+    font-size: 20px;
+    padding: 10px;
+  }
+  #author {
+    font-size: 16px;
+  }
+  #get-quote-btn svg {
+    width: 60px;
+    height: 60px;
+  }
 }
