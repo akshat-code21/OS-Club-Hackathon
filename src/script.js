@@ -12,8 +12,13 @@ buttons.forEach((button) => {
     fetchQuotes();
   });
 });
-function getQuote() {
-    fetchQuotes();
+async function getQuote() {
+    let response = await fetch("https://api.api-ninjas.com/v1/quotes",{
+      headers: { "X-Api-Key": "UQhRGwtlB72XtU4aGT28Bg==lamTdusF0AzkV4Xi" },
+    });
+    let d = await response.json();
+    console.log(d[0]);
+    displayQuote(d[0].quote, d[0].author);
   }
   function setupGetQuote() {
     let btn = document.getElementById("get-quote-btn");
