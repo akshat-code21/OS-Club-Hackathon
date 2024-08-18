@@ -6,13 +6,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Random Quote Generator</title>
     <link href="./output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="h-[10vh] text-center bg-emerald-400 flex flex-col sm:flex-row items-center justify-between p-4">
+    <header class="h-[10vh] text-center bg-emerald-400 flex items-center justify-between p-4">
       <div class="logo text-[6vw] sm:text-[38px] font-bold">Quote Generator</div>
-      <nav class="nav mt-4 sm:mt-0">
-        <ul class="nav-ul flex flex-wrap justify-center items-center gap-4 text-[5vw] sm:text-[20px]">
+      <nav class="relative">
+        <button id="menu-toggle" class="sm:hidden focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul
+          id="nav-menu"
+          class="nav-ul hidden sm:flex flex-col sm:flex-row justify-center items-center gap-4 absolute sm:static top-[100%] left-0 right-0 bg-emerald-400 sm:bg-transparent p-4 sm:p-0 z-10"
+        >
           <li><button class="nav-btn">Computers</button></li>
           <li><button class="nav-btn">Knowledge</button></li>
           <li><button class="nav-btn">Car</button></li>
@@ -53,10 +61,6 @@
         </button>
       </div>
     </main>
-    
     <footer></footer>
-
-    <script src="script.js"></script>
-    
   </body>
 </html>

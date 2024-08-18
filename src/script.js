@@ -40,3 +40,11 @@ function displayQuote(quote,author) {
     quoteAuthorContainer.innerHTML = ('<h6>' + "- "+ author + '</h6>');
     // quoteAuthor.innerText = "- " + author;
 }
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('hidden');
+});
