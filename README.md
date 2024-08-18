@@ -23,7 +23,7 @@ Users can get inspirational,humorous, and thought-provoking quotes with just a c
 1. Clone the repository : 
 
 ```
-git clone https://github.com/your-username/random-quote-generator.git
+git clone https://github.com/akshat-code21/OS-Club-Hackathon.git
 ```
 
 2. Open `index.html` in your web browser.
