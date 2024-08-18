@@ -773,6 +773,10 @@ video {
   font-size: 7vw;
 }
 
+.text-\[3vw\] {
+  font-size: 3vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
